@@ -6,10 +6,10 @@ terraform {
       version = "4.14.0"  
     }
   }
-# Use S3 bucket called '915-terraform-backend' as Terraform Backend
+# Use S3 bucket called 'manav-terraform-backend' as Terraform Backend
   backend "s3" {
     bucket = "manav-assignment-backend"
-    key    = "assignment/tfstate"
+    key    = ""/Users/manavsheth/terraform-ansible-jenkins/private-key/upgrad_project.pem""
     region = "us-east-1"
   }
 }
