@@ -7,7 +7,7 @@ resource "null_resource" "Name" {
     host     = aws_eip.bastion_eip.public_ip    
     user     = "ubuntu"
     password = ""
-    private_key = file("private-key/upgrad-project.pem")
+    private_key = file("/Users/manavsheth/terraform-ansible-jenkins/private-key/upgrad_project.pem")
   }  
 
 
