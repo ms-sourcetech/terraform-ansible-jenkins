@@ -1,5 +1,5 @@
 # Create a Null Resource and Provisioners
-resource "null_resource" "name" {
+resource "null_resource" "Name" {
   depends_on = [module.ec2_public, module.ec2_jenkins, module.ec2_app]
   # Connect to Bastion Instance after it is created
   connection {
